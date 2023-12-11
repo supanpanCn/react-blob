@@ -1,7 +1,3 @@
-import Storage from './pages/storage';
-import Redux from './pages/redux';
-import Atd from './pages/antd';
-import Css from './pages/css';
 import { RouterProvider } from 'react-router-dom';
 import router from './router'
 import { ConfigProvider } from 'antd';
@@ -16,14 +12,6 @@ function App() {
   return (
     <ConfigProvider locale={zhCN}>
       <RouterProvider router={router}/>
-      <br />
-      <Storage/>
-      <br />
-      <Redux/>
-      <br/>
-      <Atd/>
-      <br/>
-      <Css/>
     </ConfigProvider>
   )
 }
